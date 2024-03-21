@@ -14,14 +14,12 @@ public class hashMapIterate {
 		capitalCities.put("Norway", "Oslo");
 		capitalCities.put("USA", "Washington DC");
 
-		/*
-		 * for (Entry<String, String> set : capitalCities.entrySet()) {
-		 * 
-		 * System.out.println(set.getKey() + " = " + set.getValue());
-		 * 
-		 * }
-		 */
-		
+		for (Entry<String, String> set : capitalCities.entrySet()) {
+
+			System.out.println(set.getKey() + " " + set.getValue());
+
+		}
+
 		/*
 		 * System.out.println(capitalCities.get("USA"));
 		 * 
@@ -31,9 +29,10 @@ public class hashMapIterate {
 		 * System.out.println("\nValue:"); for (String i : capitalCities.values()) {
 		 * System.out.println(i); }
 		 */
-		
+
 		for (String i : capitalCities.keySet()) {
-			System.out.println("Key : " + i + " & Value : " + capitalCities.get(i));
+//			System.out.println("Key : " + i + " & Value : " + capitalCities.get(i));
+			System.out.println("Value : " + capitalCities.get(i));
 		}
 	}
 }

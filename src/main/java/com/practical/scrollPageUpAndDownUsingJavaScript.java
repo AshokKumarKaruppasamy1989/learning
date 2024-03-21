@@ -44,7 +44,7 @@ public class scrollPageUpAndDownUsingJavaScript {
 
 			// 3. To scroll down the web page at the bottom of the page
 
-			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			js.executeScript("window.scrollBy(0, document.body.scrollHeight)");
 
 			// 4. Horizontal scroll on the web page
 

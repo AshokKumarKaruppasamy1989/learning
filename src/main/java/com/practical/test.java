@@ -1,19 +1,53 @@
 package com.practical;
 
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class test {
 
-	public static WebDriver driver;
-
-	public static void main(String[] args) {
-
-		Actions action = new Actions(driver);
+	public static void main(String[] args) throws InterruptedException {
 		
-		action.keyDown(Keys.CONTROL).sendKeys(Keys.F5).keyUp(Keys.CONTROL).perform();
-
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		
+		driver.get("https://www.expedia.com/");
+		Thread.sleep(5000);
+		
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
+		Thread.sleep(3000);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@aria-label='Going to']")));
+		
+		driver.findElement(By.xpath("//button[@aria-label='Going to']")).click();
+		
+		driver.findElement(By.id("destination_form_field")).sendKeys("Chennai");
+		Thread.sleep(2000);
+		
+		List<WebElement> option = driver.findElements(By.xpath("//div[@class='typeahead-custom-truncate']"));
+		System.out.println(option.size()); 
+		
+		wait.until((ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='typeahead-custom-truncate']"))));
+		
+		for(WebElement o: option) {
+			if(o.getText().equalsIgnoreCase("Chennai (MAA - Chennai Intl.)")) {
+				System.out.println(o.getText());
+				driver.findElement(By.xpath("//button[@aria-label='Chennai (MAA - Chennai Intl.) India']")).click();
+				//o.click();
+				break;
+			}
+		}
 	}
 
 }

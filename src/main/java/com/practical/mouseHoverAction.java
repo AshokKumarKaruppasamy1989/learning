@@ -18,7 +18,7 @@ public class mouseHoverAction {
 		Actions actions = new Actions(driver);
 
 		// Hovering on main menu
-		actions.moveToElement(mainMenu);
+		actions.moveToElement(mainMenu).click();;
 
 		// Locating the element from Sub Menu
 		WebElement subMenu = driver.findElement(By.xpath("<Xpath of the sub element>"));

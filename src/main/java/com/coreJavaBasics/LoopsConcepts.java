@@ -1,4 +1,4 @@
-package com.corejavatrainingsessions;
+package com.coreJavaBasics;
 
 public class LoopsConcepts {
 
