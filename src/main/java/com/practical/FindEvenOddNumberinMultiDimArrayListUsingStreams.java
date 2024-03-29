@@ -13,7 +13,10 @@ public class FindEvenOddNumberinMultiDimArrayListUsingStreams {
 		int[][] data = { { 2, 8, 0 }, { 28, -4, 3 }, { 47, 1, 9 } };
 
 		IntStream stream = Arrays.stream(data).flatMapToInt(Arrays::stream);
+		System.out.println("Odd Number :");
 		stream.filter(e -> e % 2 == 0).forEach(System.out::println);
+		System.out.println("Even number :");
+		stream.filter(f -> f % 2 != 0).forEach(System.out::println);
 		
 
 //		System.out.println("Even Number");

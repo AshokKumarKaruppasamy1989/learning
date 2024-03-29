@@ -5,6 +5,7 @@ public class duplicateStringInArray {
 	public static void main(String[] args) {
 
 		String[] data = { "aab", "bcc", "cdd", "aab", "dee", "eff", "cdd", "fgg", "bcc" };
+		System.out.println(data.length);
 
 		for (int i = 0; i < data.length - 1; i++) {
 

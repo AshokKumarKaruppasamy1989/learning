@@ -57,6 +57,14 @@ public class test {
 				break;
 			}
 		}
+		
+//		((JavascriptExecutor)driver).executeScript("document.getElementById('fromDate').setAttribute('value','10 Apr 2024')")
+		
+		
+		driver.manage().window().getSize().getHeight();
+		driver.manage().window().getSize().getWidth();
+		
+		driver.navigate().forward();
 	}
 
 }
