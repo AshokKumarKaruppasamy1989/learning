@@ -10,8 +10,8 @@ public class ArrayReverse {
 
 		String[] stringArr = {"Test", "Array", "Java"};
 		Integer [] intArr = { 1, 2, 3, 4, 5 };
-		System.out.println("Original Array : " + Arrays.asList(intArr));
-		reversedArray(intArr);
+//		System.out.println("Original Array : " + Arrays.asList(intArr));
+		reversedArray(stringArr);
 
 	}
 
@@ -23,15 +23,12 @@ public class ArrayReverse {
 			reverseArray[i] = arr[arr.length - i - 1];
 		}
 
-		System.out.println("ReversedArray is : " + Arrays.toString(reverseArray));
-//		for (String i : reverseArray) {
-//			System.out.println(i + " ");
-//		}
+		System.out.println("Reversed String Array is : " + Arrays.toString(reverseArray));
 		
 	// Alternate
 		
 //		Collections.reverse(Arrays.asList(arr));
-//		System.out.println("Reveresed Array : " + Arrays.asList(arr));
+//		System.out.println("Reversed String Array is : " + Arrays.asList(arr));
 	}
 
 	public static void reversedArray(Integer [] arr) {
@@ -42,7 +39,7 @@ public class ArrayReverse {
 			reverseArray[i] = arr[arr.length - i - 1];
 		}
 
-		System.out.println("ReversedArray is : " + Arrays.toString(reverseArray));
+		System.out.println("Reversed Integer Array is : " + Arrays.toString(reverseArray));
 //		for (String i : reverseArray) {
 //			System.out.println(i + " ");
 //		}
@@ -51,7 +48,7 @@ public class ArrayReverse {
 		// Alternate
 		
 //		Collections.reverse(Arrays.asList(arr));
-//		System.out.println("Reveresed Array : " + Arrays.asList(arr));
+//		System.out.println("Reversed Integer Array is : " + Arrays.asList(arr));
 	}
 
 }
