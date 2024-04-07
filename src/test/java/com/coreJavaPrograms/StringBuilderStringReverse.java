@@ -1,6 +1,6 @@
 package com.coreJavaPrograms;
 
-public class StringReverse {
+public class StringBuilderStringReverse {
 
 	public static void main(String[] args) {
 		// Write a method that will take one string as an argument and will return the

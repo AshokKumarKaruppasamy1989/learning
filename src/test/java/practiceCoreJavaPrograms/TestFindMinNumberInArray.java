@@ -1,4 +1,4 @@
-package com.coreJavaPrograms;
+package practiceCoreJavaPrograms;
 
 public class TestFindMinNumberInArray {
 

@@ -1,4 +1,4 @@
-package com.coreJavaPrograms;
+package practiceCoreJavaPrograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
