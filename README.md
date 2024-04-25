@@ -5,6 +5,17 @@ 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
 
 ||Java coding interview questions for QA ||
 
+1) Difference between Instance Variable and Class Variable?
+2) What is interface and how it is different from Class?
+3) What is Abstraction in java and how Abstract class is different from Interface?
+4) What is Inheritance in java and explain the usage of Inheritance?
+5) What is Constructor and explain the types of constructor?
+6) What is super keyword and explain the usage?
+7) Explain this keyword?
+8) What are access modifiers in java explain with examples?
+9) What is final keyword in Java?
+10) What is wrapper class in Java?
+
 1. String reverse. Write a method that will take one string as an argument and will return the reverse version of this string.
 
 2. Array reverse. Write a method that will take an array as an argument and reverse it.
